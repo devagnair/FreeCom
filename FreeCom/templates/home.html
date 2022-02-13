@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block title %}
+Home page
+{% endblock %}
+{% block search %}
+<form class="form-inline" action="{{url_for('result_page')}}" method="GET">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search for product" aria-label="Search" name="query">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+{% endblock %}
+{% block content %}
+<h1>About</h1>
+<div class="card-columns f-color view overlay zoom">
+  <div class="card view overlay zoom">
+    <img src="https://techstory.in/wp-content/uploads/2021/10/Snapdeal.jpg" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Founder: Kunal Bahl, Rohit Bansal</h5>
+      <p class="card-text">Snapdeal is an Indian e-commerce company, based in New Delhi, India. The company was founded in February 2010 by Kunal Bahl and Rohit Bansal, alumni of The Wharton School and Indian Institute of Technology Delhi respectively.  </p>
+    </div>
+  </div>
+  <!--
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>-->
+  <div class="card">
+    <img src="https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Logo-2007-2015.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Founders: Sachin Bansal, Binny Bansal</h5>
+      <p class="card-text">Flipkart is an Indian e-commerce company, headquartered in Bangalore, Karnataka, India, and incorporated in Singapore as a private limited company.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>PCS-Price Comparison Site</p>
+      <footer class="blockquote-footer text-white">
+        <small>
+          By <cite title="Source Title">Deva Ganesh Nair 19100BTCSAII05257</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <!--
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>-->
+  <div class="card">
+    <img src="https://inc42.com/wp-content/uploads/2017/04/flipkart-snapdeal-merger-1200x840.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>Price comparison sites do exactly what their name implies: compare the price of goods and services from a range of companies. This allows you to make sure you get a deal that's tailored to you at the best price. However, finding the best deal isn't always as simple as it sounds.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          cited in <cite title="Source Title">Price comparison sites explained - Which? - Which.co.uk</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Working</h5>
+      <p class="card-text">This site take your input and find top 5 products both in Amazon and Flipkart on the basis of relevence. Their respective links are also present for your convenience </p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block style %}
+<style>
+  body {
+  background-color: #212121;
+  color: white
+  }
+  .f-color{
+    color: black;
+  }
+</style>
+{% endblock %}

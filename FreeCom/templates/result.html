@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}
+Result page
+{% endblock %}
+{% block content %}
+<u><h1>Result for <i>{{ x_name }}</i></h1></u>
+    <table class="table table-hover table-dark table-striped table-bordered">
+        <thead>
+            <tr>
+                <!-- Your Columns HERE -->
+                <!--<th scope="col">ID</th>-->
+                <th scope="col">Sold By</th>
+                <th scope="col">Product Info</th>
+                <th scope="col">Price</th>
+                <th scope="col">Link To Site</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Your rows inside the table HERE: -->
+            {% for item in items %}                
+              <tr>
+                 <td>{{ item["Sold By"] }}</td>
+                 <td>{{ item["Product Info"] }}</td>
+                 <td>{{ item["Price"] }} </td>
+                 <td>
+                    <a href="{{ item['Link To Site'] }}" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Link to Buy</a>
+                     
+                </td>
+              </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+{% block style %}
+<style>
+  body {
+  background-color: #212121;
+  color: white
+  }
+</style>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+QR Scanner page
+{% endblock %}
+
+{% block content %}
+<h1>Live streaming</h1>
+<div>
+
+    <img src="{{ url_for('video') }}" width="50%"/>
+</div>
+{% endblock %}
+{% block style %}
+<style>
+  body {
+  background-color: #212121;
+  color: white
+  }
+  .f-color{
+    color: black;
+  }
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  }
+  h1 {text-align: center;}
+</style>
+{% endblock %}

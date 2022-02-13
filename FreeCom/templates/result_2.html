@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+Result page for Product comparison
+{% endblock %}
+{% block content %}
+<u><h1>Result for <i>{{ comb }}</i></h1></u>
+<table class="table table-hover table-dark table-striped table-bordered">
+    <thead>
+        <tr>
+            <!-- Your Columns HERE -->
+            <!--<th scope="col">ID</th>-->
+            <th scope="col">Features</th>
+            <th scope="col">Details of Product 1</th>
+            <th scope="col">Details of Product 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Your rows inside the table HERE: -->
+        {% for item in det %}                
+          <tr>
+             <td>{{ item['Features'] }}</td>
+             <td>{{ item['Details of Product 1'] }}</td>
+             <td>{{ item['Details of Product 2'] }} </td>
+          </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+{% block style %}
+<style>
+  body {
+  background-color: #212121;
+  color: white
+  }
+</style>
+{% endblock %}
