@@ -1,6 +1,8 @@
 # FreeCom
 Python Web App(Flask), Automated web scraping(Bs4), Computer Vison(OpenCv)
 
+![Home Page](https://github.com/devagnair/FreeCom/blob/main/freecom%20ss/homr%20page.jpg)
+
 ## 1. Web scraping part:
 
 ### Price comparison:
